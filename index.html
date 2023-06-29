@@ -1,0 +1,496 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172445699-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172445699-1');
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Raddhiwala.com</title>
+  
+  
+
+  <style>
+      nav{
+          min-height: 105px;   
+      }
+
+      #nav {
+      position:relative;
+      min-height: 105px;
+      padding: 0px 40px 25px 10px;
+      margin:0px 0px 0px 0px;
+      }
+ 
+      ul#navigation {
+          margin:0px auto;
+          position:relative;
+          float:left; 
+      }
+ 
+      ul#navigation li {
+          display:inline;
+          font-size: 25px;
+          color: #000000;
+          position:relative;
+      }
+ 
+      ul#navigation li a {
+          text-shadow:1px 1px 0px #fff;
+          text-decoration:none;
+          display:outside;
+          color: #000000;
+          padding: 19px 40px 25px 10px;
+          font-size: 20px;
+          -webkit-transition:color 0.2s linear, background 0.2s linear;
+          -moz-transition:color 0.2s linear, background 0.2s linear;
+          -o-transition:color 0.2s linear, background 0.2s linear;
+          transition:color 0.2s linear, background 0.2s linear;
+      }
+ 
+      ul#navigation li a:hover {
+          color:#61aa3d;
+      }
+ 
+      ul#navigation li:hover > a {
+          background:#fff;
+      }
+
+      ul#navigation li:hover > ul {
+      /*these 2 styles are very important,
+      being the ones which make the drop-down to appear on hover */
+          visibility:visible;
+          opacity:1;
+      }
+
+      ul#navigation ul, ul#navigation ul li ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      /*the next 2 styles are very important,
+      being the ones which make the drop-down to stay hidden */
+          visibility:hidden;
+          opacity:0;
+          position: absolute;
+          z-index: 99999;
+          width:118%;
+          background:#f8f8f8;
+          
+      /* css3 transitions for smooth hover effect */
+          -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+          -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+          -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+          transition:opacity 0.2s linear, visibility 0.2s linear;
+      }
+ 
+      ul#navigation ul {
+          top: 105px;
+          left: -25px;
+      }
+ 
+      ul#navigation ul li {
+          clear:both;
+          width:100%;
+          border:0 none;
+      }
+ 
+      ul#navigation ul li a {
+          background:none;
+          padding:7px 15px;
+          font-size: 17px;
+          color: #000000;
+          text-shadow:1px 1px 0px #fff;
+          text-decoration:none;
+          display:inline-block;
+          clear:both;
+          width:100%;
+          text-align: center;
+      }
+
+    
+      #bigsection{
+          min-height:500px;
+      }
+
+      #smallsection{
+          max-height: 230px;
+      }
+
+      .slider .slides{
+          max-height: 230px;
+      }
+    
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      * {box-sizing: border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        background: #ffffff;
+      }
+
+      #container1{
+        width:85%;
+        margin-left: auto;
+        margin-right: auto;  
+      }
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+      }
+
+      .modal {
+        min-height: 630px; /* Adjust the height as per your requirement */
+        overflow-y: auto;
+        width:105%;
+      }
+
+  </style>
+</head>
+
+<link rel="icon" href="img/logo2.png">
+  
+<body>
+
+  <!-- navbar -->
+  <nav id="nav" class="nav-wrapper transparent hide-on-small-only" style="width: 100%">
+        <a href="index.html" class="brand-logo font">
+            <img style="width: 410px; margin-left: 50px" src="img/logo.png">
+        </a>
+        
+        <ul id="navigation" class="right hide-on-small-only">
+            <li class="indigo-text text-darken-3">
+                <a href="index.html" style="font-family:Varela Round; font-size:20px;">Home
+                </a>
+            </li>
+              
+            <li>
+                <a href="#about" style="font-family:Varela Round; font-size:20px;">About
+                </a>
+            </li>
+
+            <li>
+              <a style="font-family:Varela Round;">Services</a>
+                    <ul>
+                        <li style="font-family:Varela Round;"><a href="individuals.html">For Individuals</a></li>
+                        <li style="font-family:Varela Round;"><a href="organizations.html">For Govt. Org. & Businesses</a></li>
+                    </ul>
+            </li>
+
+            <li>
+              <a href="scraprates.html" style="font-family:Varela Round; font-size:20px;">Scrap Rates
+              </a>
+            </li>
+          
+            <li>
+                <a href="#contact" style="font-family:Varela Round; font-size:20px;">Contact
+                </a>
+            </li>     
+        </ul>   
+  </nav>
+
+
+  <nav class="transparent hide-on-med-and-up" style="height: 130px;">
+      <div class="container">
+          <a href="index.html" class="brand-logo font responsive-img hide-on-med-and-up">
+            <img style="width: 350px; margin-top:30px;" src="img/logo.png">
+          </a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons black-text" style="font-size:30px; margin-left: -27px;">menu
+              </i>
+          </a>
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                  <li><a href="index.html" style="font-family:Varela Round;font-size: 15.5px; margin-top:15px;">Home</a></li>
+                  <li><a href="individuals.html"  style="font-family:Varela Round;font-size: 15.5px;">Services For Individuals</a></li>
+                  <li><a href="organizations.html"  style="font-family:Varela Round;font-size: 15.5px;">Services For Govt. & Businesses</a></li>
+                  <li><a href="scraprates.html" style="font-family:Varela Round;font-size: 15.5px;">Scrap Rates</a></li>
+                  <li><a href="contact.html" style="font-family:Varela Round;font-size: 15.5px;">Contact</a></li>
+              </ul>
+      </div>
+  </nav>
+ 
+  <!-- Floating Action Button -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large modal-trigger grey darken-2 pulse" href="#modal"><i class="large material-icons">call</i></a>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content center">
+
+      <iframe class="hide-on-small-only" src="https://docs.google.com/forms/d/e/1FAIpQLSeC6BAZmVONfuwXqlNMfV83nK2blqPlIPxBN1eRr7qvBjLBzA/viewform?embedded=true" 
+      width="640" height="552" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      <iframe class="hide-on-med-and-up" src="https://docs.google.com/forms/d/e/1FAIpQLSc9XlQV_QLx80Sze2KLQT2Vaf102t-CA9r-2-o1HSk4ZU3TSg/viewform?embedded=true" 
+      width="340" height="540" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      <BR class="hide-on-med-and-up"><BR>
+      <a href="#!" class="modal-close waves-effect green waves-green btn">Close</a>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var fab = document.querySelectorAll('.fixed-action-btn');
+      var modal = document.querySelectorAll('.modal');
+      M.FloatingActionButton.init(fab);
+      M.Modal.init(modal);
+    });
+  </script>
+
+  <div class="center hide-on-small-only">
+    <ul id="bigsection">
+        <img src="img/7.jpg" style="width:95%;">
+    </ul>
+  </div>
+  <BR class="hide-on-small-only">
+  <h6 class="black-text center text-darken-4 scrollspy hide-on-small-only" style="font-family:Varela Round; font-size:20px;">
+        Help us recycle your scrap and become a proud member of the recycling movement for a better tomorrow.
+  </h6>
+  
+  <img class="hide-on-med-and-up" src="img/17.jpg">
+  <h5 class="black-text center hide-on-med-and-up" style="font-family:Varela Round; font-size:14px;">
+    Help us recycle your scrap and become a proud member of the recycling movement for a better tomorrow. 
+  </h5>
+
+  <BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+
+  <img class="hide-on-med-and-up" src="img/18.jpg" style="height:580px;">
+
+  <h4 class="center hide-on-med-and-up" style="font-family:Varela Round; color:white; margin-top: -540px;"> About Us
+  </h4>
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:white; text-align: justify;padding-left: 15px; padding-right:15px;">
+    Raddhiwala.com &copy; is a subsidary of a forty year old legacy - Mahavir Paper Mart. 
+    We are a family-owned and operated scrap and waste paper recycling business that has been serving the community for over 40 years. 
+    We are committed to providing our customers with the best possible service and helping to create a cleaner and healthier planet.
+  </p>
+
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:white; text-align: justify;padding-left: 15px; padding-right:15px;">
+    We are a licensed and insured scrap and waste paper recycling company, and we are committed to following all environmental regulations. 
+    We also offer competitive prices and prompt pickup and delivery.
+    We are proud to be a part of our community, and we are committed to making a positive impact on the environment.
+  </p>
+
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:white; text-align: justify;padding-left: 15px; padding-right:15px;">
+    We believe that recycling scrap and waste paper is a great way to reduce waste, conserve resources, and protect the environment.
+    If you have any scrap and waste paper that you would like to recycle, please contact us today. 
+    We would be happy to help you recycle your scrap and waste paper and make a difference for the environment.
+  </p>
+
+  <BR class="hide-on-small-only"><BR class="hide-on-small-only">
+  <img class="scrollspy hide-on-small-only" src="img/11.jpg" id="about">
+  
+  <div class="center scrollspy hide-on-small-only" style="display: flex;" id="container1">
+      <img class="image" src="img/6.jpg" style="width: 300px;margin-top:50px;margin-right:50px;height:300px;">
+      <div class="information">
+          <p class="scrollspy hide-on-small-only center" style="font-family:Varela Round;color:#61aa3d; font-size:30px;margin-top:70px">Our Mission</p>
+          </p>
+          <p style="font-family:Varela Round; text-align: justify; font-size:17px; margin-top:-20px;">
+            To provide our customers with a convenient, reliable, and environmentally friendly way to recycle their scrap metal.
+          </p>
+          <p class="scrollspy hide-on-small-only center" style="font-family:Varela Round;color:#61aa3d; font-size:30px;margin-top:-10px;">Our Vision</p>
+          </p>
+          <p style="font-family:Varela Round; text-align: justify; font-size:17px; margin-top:-20px;">
+            To be the leading provider of sustainable scrap management solutions by continuing to innovate and develop new ways to recycle
+            scrap materials, and by working with our partners to create a more sustainable future.
+          </p>
+      </div>
+  </div>
+  <BR><BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+
+  <div class="center hide-on-med-and-up">
+    <img src="img/6.1.jpg" style="width:50%">
+  </div> 
+  <BR class="hide-on-med-and-up">
+  <h5 class="center hide-on-med-and-up" style="font-family:Varela Round; color:Black;"> Our Mission
+  </h5>
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:black; text-align: justify;padding-left: 15px; padding-right:15px;">
+    To provide our customers with a convenient, reliable, and environmentally friendly way to recycle their scrap metal.
+  </p>
+  <BR class="hide-on-med-and-up">
+  <h5 class="center hide-on-med-and-up" style="font-family:Varela Round; color:Black;"> Our Vision
+  </h5>
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:black; text-align: justify;padding-left: 15px; padding-right:15px;">
+    To be the leading provider of sustainable scrap management solutions by continuing to innovate and develop new ways to recycle
+    scrap materials, and by working with our partners to create a more sustainable future.
+  </p>
+
+
+
+  <p class="scrollspy hide-on-small-only center" style="font-family:Varela Round;color:#61aa3d; font-size:40px;">We Buy</p>
+  <div class="center hide-on-small-only" style="margin-top:-30px;">
+    <ul id="bigsection" style="min-height:10px;">
+        <img src="img/13.jpg">
+    </ul>
+  </div>
+
+  <BR class="hide-on-med-and-up">
+  <h4 class="center hide-on-med-and-up" style="font-family:Varela Round; color:#61aa3d; ">We Buy
+  </h4>
+
+  <img class="hide-on-med-and-up" src="img/12.jpg">
+  <BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+  <img class="hide-on-med-and-up" src="img/12.1.jpg">
+
+  <h6 class="black-text center text-darken-4 scrollspy hide-on-small-only" style="font-family:Varela Round; font-size:20px;margin-top:30px;">
+    And much more ... contact us today to know if your scrap item is elegible for selling.
+  </h6>
+
+  <p class="center hide-on-med-and-up" style="font-family:Varela Round; color:black; text-align: justify;padding-left: 15px; padding-right:15px;">
+    And much more ... contact us today to know if your scrap item is elegible for selling.
+  </p>
+
+  <BR><BR class="hide-on-small-only">
+  <p class="scrollspy hide-on-small-only center" style="font-family:Varela Round;color:#61aa3d; font-size:40px;">Our Satisfied Clientele</p>
+  <div class="center hide-on-small-only">
+    <ul id="bigsection" style="min-height:100px;">
+        <img src="img/4.jpg" style="width:95%;">
+    </ul>
+  </div>
+
+  <h4 class="center hide-on-med-and-up" style="font-family:Varela Round; color:#61aa3d; ">Our Satisfied Clientele
+  </h4>
+  <div class="center hide-on-med-and-up" style="padding:20px;">
+      <img src="img/19.jpg">
+      <img src="img/20.jpg">
+  </div>
+  <BR><BR>
+
+  <img class="hide-on-med-and-up" src="img/18.jpg" style="height:520px;">
+  <h4 class="center hide-on-med-and-up" style="font-family:Varela Round; color:white; margin-top: -480px;"> Find Us
+  </h4>
+
+  <div class="center hide-on-med-and-up">
+    <BR class="hide-on-med-and-up">
+    <iframe class="center hide-on-med-and-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.066219332904!2d72.83013921054334!3d18.928462856514077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c374c77013%3A0xf98573026fa5433b!2sMahavir%20Paper%20Mart!5e0!3m2!1sen!2sin!4v1687860829837!5m2!1sen!2sin" 
+    width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+    <BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+  </div>
+  
+
+
+  <div class="center hide-on-small-only">
+    <ul id="bigsection">
+        <img src="img/16.jpg">
+    </ul>
+  </div>
+
+<div class="container hide-on-med-and-up">
+  <h6 class="black-text" style="font-family:Varela Round;font-weight:bold;">Contact</h6>
+    <p class="black-text" style="font-family:Varela Round;font-size:small;margin-top:20px;">
+      <b>Office Address </b> : C/o Mahavir Paper Mart, Shop no. 5, Surya Mahal Building, B.B. Marg, Kala Ghoda, Fort, Mumbai - 400001</p>
+    </p>
+
+    <p class="black-text" style="font-family:Varela Round;font-size:small;">
+      <b>Contact Number </b> : +91 98338 88133, 022 2267 7124
+    </p>
+
+    <p class="black-text" style="font-family:Varela Round;font-size:small;">
+      <b>Email </b> : info@mahavirprints.in
+    </p>
+
+    <BR>
+
+    <h6 class="black-text" style="font-family:Varela Round;font-weight:bold;">Connect</h6>
+    <ul>
+        <li>
+          <i class="fa fa-envelope black-text" style="margin-top:10px;"></i>
+            <a href=info@mahavirprints.in?subject class="black-text" style="font-family:Varela Round;font-size:small;">&nbsp;&nbsp;Email</a>
+        </li>
+        <BR>
+        <li>
+          <i class="fa fa-whatsapp black-text"></i>
+            <a href="https://wa.me/919833888133" class="black-text" style="font-family:Varela Round;font-size:small;">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+        </li>  
+    </ul>
+</div>
+
+<!-- footer -->
+<footer class="page-footer white">
+    <div class="container hide-on-small-only" style="width:880px">
+        <div class="row">
+          <div class="col s12 l5 scrollspy" id="contact">
+              <h5 style="font-family:Varela Round;color:#61aa3d;">Contact</h5>
+              
+              <p class="black-text" style="font-family:Varela Round;font-size:small;">
+              <b>Office Address </b> : C/o Mahavir Paper Mart, Shop no. 5, Surya Mahal Building, B.B. Marg, Kala Ghoda, Fort, Mumbai - 400001</p>
+
+              <p class="black-text" style="font-family:Varela Round;font-size:small;">
+              <b>Contact Number </b> : +91 98338 88133, 022 2267 7124</p>
+
+              <p class="black-text" style="font-family:Varela Round;font-size:small;">
+              <b>Email </b> : info@mahavirprints.in</p>
+          </div>
+          <div class="col s12 l2 offset-l5 scrollspy">
+            <h5 style="font-family:Varela Round;color:#61aa3d;">Connect</h5>
+              <ul>
+                  <li>
+                  <i class="fa fa-envelope black-text"></i>
+                    <a href=mailto:info@mahavirprints.in?subject class="black-text" style="font-family:Varela Round;font-size:small;">&nbsp;&nbsp;Email</a>
+                    </li>
+                    <BR>
+                    <li>
+                    <i class="fa fa-whatsapp black-text"></i>
+                    <a href="https://wa.me/919833888133" class="black-text" style="font-family:Varela Round;font-size:small;">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                      </li>  
+              </ul>
+          </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align hide-on-small-only" style="font-family:Varela Round;">&copy; Raddhiwala.com - Mahavir Paper Mart</div>
+        <div class="container center-align hide-on-med-and-up" style="font-family:Varela Round;">&copy; Raddhiwala.com - Mahavir Paper Mart</div>
+    </div>
+</footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#mobile-menu').sidenav({ edge: 'left'});
+      $('#mobile-menu-right').sidenav({ edge: 'right'});
+      $('.materialboxed').materialbox();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $(".tabs-content").css('width','1000px');
+    });
+    
+  </script>
+</body>
+</html>
